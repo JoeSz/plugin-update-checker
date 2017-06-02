@@ -1,10 +1,10 @@
 <?php
-if ( !class_exists('Puc_v4_DebugBar_Extension', false) ):
+if ( !class_exists('Puc_v4p1_DebugBar_Extension', false) ):
 
-	class Puc_v4_DebugBar_Extension {
-		/** @var Puc_v4_UpdateChecker */
+	class Puc_v4p1_DebugBar_Extension {
+		/** @var Puc_v4p1_UpdateChecker */
 		protected $updateChecker;
-		protected $panelClass = 'Puc_v4_DebugBar_Panel';
+		protected $panelClass = 'Puc_v4p1_DebugBar_Panel';
 
 		public function __construct($updateChecker, $panelClass = null) {
 			$this->updateChecker = $updateChecker;
@@ -46,7 +46,7 @@ if ( !class_exists('Puc_v4_DebugBar_Extension', false) ):
 				'puc-debug-bar-js-v4',
 				$this->getLibraryUrl("/js/debug-bar.js"),
 				array('jquery'),
-				'20161219'
+				'20170516'
 			);
 		}
 
